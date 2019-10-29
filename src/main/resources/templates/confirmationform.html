@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Confirmation_form</title>
+</head>
+<body>
+    <p th:inline="text">The patient name was [[${patient.name}]].<br />
+    The patient last name was [[${patient.lastName}]]<br/>
+    The patient SSN was [[${patient.ssn}]] <br/>
+    The patient DoB was [[${patient.dob}]]
+    </p>
+
+</body>
+</html>

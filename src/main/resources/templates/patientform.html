@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Patient_form</title>
+</head>
+<body>
+    <form action="#" th:action="@{patientform}" th:object="${patient}" method="post">
+        First Name: <input type="text" th:field="*{name}" /><br />
+        Last Name: <input type="text" th:field="*{lastName}" /><br />
+        SSN: <input type="number" th:field="*{ssn}" /><br />
+        DoB: <input type="number" th:field="*{dob}" /><br />
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>
